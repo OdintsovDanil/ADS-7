@@ -55,6 +55,8 @@ T TPQueue<T>::pop() {
         T out = first->data;
         start = first->next;
         return out;
+    } else {
+        throw "Empty!";
     }
 }
 
